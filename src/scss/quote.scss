@@ -1,0 +1,99 @@
+.quote {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #DBE3F0;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  background-image: url("../img/vector-corner.png");
+  background-repeat: no-repeat;
+}
+
+.quote-author {
+  text-align: center;
+}
+
+.quote-img {
+  margin-bottom: 24px;
+  border: 1px solid #DBE3F0;
+}
+
+.quote-text {
+  max-width: 480px;
+  width: 100%;
+
+  color: $title-color;
+}
+
+@media(min-width: $desktop) {
+  .quote {
+    padding: 56px;
+  }
+}
+
+@media(max-width: $desktop) {
+  .quote {
+    padding: 40px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media(min-width: $min-desktop) {
+  .quote{
+    background-size: 70px;
+    background-position: bottom 32px right 32px;
+  }
+
+  .quote-text {
+    p {
+      margin: 0 0 40px 40px;
+    }
+  }
+}
+
+@media(max-width: $min-desktop) {
+  .quote {
+    background-size: 56px;
+  }
+}
+
+@media(max-width: $tablet) {
+  .quote {
+    margin-bottom: 96px;
+    padding: 40px 16px;
+    flex-wrap: wrap;
+    background-size: 40px;
+    background-position: bottom 16px right 16px;
+  }
+
+  .quote-text {
+    p {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .quote-img {
+    border-radius: 38px;
+
+    width: 140px;
+    height: 140px;
+  }
+
+  .quote-author {
+    margin-bottom: 24px;
+  }
+}
+
+@media(min-width: $tablet) {
+  .quote {
+    margin-bottom: 144px;
+    background-position: bottom 32px right 32px;
+  }
+  .quote-img {
+    border-radius: 56px;
+
+    width: 152px;
+    height: 152px;
+  }
+}
